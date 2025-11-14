@@ -1,0 +1,1 @@
+# copy-products-magento-shopware
