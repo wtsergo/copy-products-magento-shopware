@@ -1,0 +1,11 @@
+{
+    "name": "CopyProductsMagentoShopware",
+    "alias": "copyproductsmagentoshopware",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Wtsergo\\CopyProductsMagentoShopware\\Providers\\ServiceProvider"
+    ],
+    "files": []
+}

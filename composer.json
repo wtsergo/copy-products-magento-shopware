@@ -1,0 +1,25 @@
+{
+    "name": "wtsergo/copy-products-magento-shopware",
+    "description": "",
+    "authors": [
+        {
+            "name": "Sergey Boyko",
+            "email": "wtsergo@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Wtsergo\\CopyProductsMagentoShopware\\Providers\\ServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Wtsergo\\CopyProductsMagentoShopware\\": "app/"
+        }
+    }
+}
