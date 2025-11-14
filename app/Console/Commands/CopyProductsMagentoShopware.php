@@ -219,14 +219,8 @@ class CopyProductsMagentoShopware extends Command
             if (($cfgOptions = $product['extension_attributes']['configurable_product_options'] ?? false)) {
                 foreach ($cfgOptions as $cfgOption) {
                     $attributeId = $cfgOption['attribute_id'];
-                    try {
-                        $attribute = $this->findAttribute($attributes, (int)$attributeId);
-                        $attributeCode = $attribute['attribute_code'];
-                    } catch (\Throwable $throwable) {
-                        var_dump($attributes);
-                        var_dump($attributeId);
-                        die("----------------$throwable");
-                    }
+                    $attribute = $this->findAttribute($attributes, (int)$attributeId);
+                    $attributeCode = $attribute['attribute_code'];
                     if (!isset($propertyGroups[$attributeCode])) {
                         $propertyGroups[$attributeCode] = ['name' => $attributeCode, 'values' => []];
                     }
